@@ -15,7 +15,7 @@ documents = [
 for doc in documents:
     collection.upsert(ids = doc["id"], documents = [doc["text"]])
 
-query_text = 'how are today'
+query_text = 'Hello World' # Type any text to check similar search
 
 results = collection.query(
     query_texts = [query_text],
